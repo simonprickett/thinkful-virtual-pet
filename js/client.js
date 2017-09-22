@@ -31,6 +31,10 @@ function checkWeightAndHappinessBeforeUpdating() {
   if (pet_info.weight < 1) {
     pet_info.weight = 1;
   }
+
+  if (pet_info.happiness < 1) {
+    pet_info.happiness = 1;
+  }
 }
 
 function updatePetInfoInHtml() {
